@@ -1,5 +1,5 @@
 .jumbotron{
-background-image: url("../images/gameroom.jpeg");
+background-image: url("../image/gameroom.jpeg");
 background-repeat: repeat-x;
 color: white;
 text-align: center;
@@ -18,7 +18,7 @@ text-align: center;
 
 
 .asphalt8{
-  background-image: url("../images/asphalt8.jpg");
+  background-image: url("../image/asphalt8.jpg");
   height: 200px;
   background-size: contain;
   margin-right: 100px;
@@ -32,7 +32,7 @@ text-align: center;
 
 
 .needforspeed{
-  background-image: url("../images/needforspeed.jpg");
+  background-image: url("../image/needforspeed.jpg");
   height: 200px;
   background-size: contain;
   margin-right: 100px;
@@ -46,7 +46,7 @@ text-align: center;
 
 
 .dirtrally{
-  background-image: url("../images/dirtrally.jpeg");
+  background-image: url("../image/dirtrally.jpeg");
   height: 200px;
   background-size: contain;
   margin-right: 100px;
@@ -62,7 +62,7 @@ text-align: center;
 
 
 .mariokart{
-background-image: url("../images/mariokart.jpeg");
+background-image: url("../image/mariokart.jpeg");
 height: 200px;
 background-size: contain;
 margin-right: 100px;
@@ -77,7 +77,7 @@ margin-top: 50px;
 
 
 .forza{
-background-image: url("../images/forzahorizon.jpg");
+background-image: url("../image/forzahorizon.jpg");
 height: 200px;
 background-size: contain;
 margin-right: 100px;
@@ -92,7 +92,7 @@ text-align: center;
 
 
 .trackmania{
-background-image: url("../images/trackmaniaturbo.jpg");
+background-image: url("../image/trackmaniaturbo.jpg");
 height: 200px;
 background-size: contain;
 margin-right: 100px;
