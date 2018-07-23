@@ -1,0 +1,81 @@
+#racing{
+  background-image: url("../image/racing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  padding-bottom: 100px;
+}
+#racing:hover{
+  transition: 1s ease;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+#sports{
+  background-image: url("../image/sports.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+#sports:hover{
+  transition: 1s ease;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+#fighting{
+  background-image: url("../image/fighting.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+#fighting:hover{
+  transition: 1s ease;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+#action{
+  background-image: url("../image/action.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+#action:hover{
+  transition: 1s ease;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+#war{
+  background-image: url("../image/fight1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+}
+#war:hover{
+  transition: 1s ease;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+body{
+  background-color: black;
+}
+#logo{
+  margin-left: 70px;
+  margin-right: 40px;
+}
+h1{
+  font-family: 'Khand', sans-serif;
+}
