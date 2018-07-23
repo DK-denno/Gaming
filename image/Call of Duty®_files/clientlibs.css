@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.selectricWrapper {
+  border: 1px solid #adabab;
+  position: relative;
+  margin: .25rem 0 20px;
+  min-width: 220px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.selectricResponsive {
+  width: 100%;
+}
+.selectric {
+  background-color: #000000;
+  position: relative;
+  color: #adabab;
+}
+.selectric .label {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.7px;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 12px 0 0;
+  line-height: 40px;
+  text-indent: 19px;
+}
+.selectric .button {
+  padding: 0;
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  width: 12px;
+  height: 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.selectric .button:after {
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/blackops4/common/BlackOps4-dropdown-arrow.svg');
+}
+.selectric-empty {
+  display: none;
+}
+.selectric-empty .button {
+  display: none;
+}
+.selectricOpen {
+  z-index: 9999;
+}
+.selectricOpen .selectric {
+  z-index: 9999;
+}
+.selectricOpen .selectricItems {
+  display: block;
+}
+.selectricOpen .label {
+  color: #adabab;
+}
+.selectricOpen .button:after {
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.selectricDisabled {
+  opacity: 0.5;
+  cursor: default;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+.selectricHideSelect {
+  position: relative;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+.selectricHideSelect select {
+  position: absolute;
+  left: -100%;
+  display: none;
+}
+.selectricInput {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  outline: none !important;
+  border: none !important;
+  *font: NaN a !important;
+  background: none !important;
+}
+/* Items box */
+.selectricItems {
+  display: none;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 100%;
+  left: -1px;
+  width: 100.5% !important;
+  background: #000000;
+  z-index: 9998;
+}
+.selectricItems .selectricScroll {
+  height: 100%;
+  overflow: auto;
+  border: 1px solid #adabab;
+}
+.selectricAbove .selectricItems {
+  top: auto;
+  bottom: 100%;
+}
+.selectricItems ul,
+.selectricItems li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  min-height: 32px;
+}
+.selectricItems li {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.7px;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+  color: #9b9b9b;
+  position: relative;
+  display: block;
+  padding: 9px 0;
+  text-indent: 19px;
+  border-top: 1px solid #4a4a4a;
+  cursor: pointer;
+  -webkit-transition: all 1.2s ease;
+  -moz-transition: all 1.2s ease;
+  -ms-transition: all 1.2s ease;
+  -o-transition: all 1.2s ease;
+  transition: all 1.2s ease;
+}
+.selectricItems li:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.selectricItems li.selected {
+  color: #adabab;
+}
+.selectricItems li.disabled {
+  color: #2d2d2d;
+  cursor: default;
+}
+.selectricItems li.hidden {
+  display: none;
+}
+.selectricWrapper .beta {
+  padding: 0;
+  position: absolute;
+  right: 6px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+.selectricWrapper .label .beta {
+  display: none;
+}
+.selectricScroll::-webkit-scrollbar {
+  width: 8px;
+}
+.selectricScroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.selectricScroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #ffffff;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.selectricScroll::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(51, 51, 51, 0.4);
+}
+@media screen and (max-width: 640px) {
+  body.ru .selectric .label {
+    font-size: 8px;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Open+Sans+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+.hidden,
+.unavailable {
+  display: none;
+}
+#bo4-wtb {
+  background: url(../../../../../../../../content/dam/atvi/callofduty/blackops4/common/bg-tile-v6.svg) #000000 top center repeat;
+  background-size: 109px;
+}
+.atvi-wheretobuy {
+  background-color: #000;
+  padding: 42px 0 69.72px;
+}
+.atvi-wheretobuy .pswtb-container {
+  display: none;
+}
+.atvi-wheretobuy.sku-mode .wtb-select.retailers-entry,
+.atvi-wheretobuy.sku-mode .select-label.retailers {
+  display: none;
+}
+.buy-wrapper {
+  position: relative;
+  margin: auto;
+  width: 50%;
+  max-width: 960px;
+}
+@media only screen and (max-width: 768px) {
+  .buy-wrapper {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .buy-wrapper {
+    display: -moz-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    display: -webkit-box;
+    justify-content: space-between;
+    -webkit-box-lines: multiple;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.buy-wrapper,
+.buy-wrapper a {
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #adabab;
+  letter-spacing: 2px;
+  text-shadow: 0px 0px 18px black;
+  line-height: 130%;
+}
+.buy-wrapper .ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+.buy-wrapper .bundle-content-container {
+  display: none;
+}
+.buy-wrapper .buy-header {
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+  min-width: 100%;
+}
+.buy-wrapper .buy-header-title {
+  margin: 42px 0 0;
+  line-height: 1;
+  font-family: "Electrolize", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #dbbd40;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 10px #34322e, 0px 0px 10px #dbbd40;
+  text-transform: uppercase;
+}
+.buy-wrapper .buy-header-subtitle {
+  margin: 15px 0 42px;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+.buy-wrapper .buy-header-container {
+  position: relative;
+  text-align: left;
+}
+.buy-wrapper .buy-header-container:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.buy-wrapper .buy-header-container:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.buy-wrapper .buy-header-container .buy-header-desc.float-left,
+.buy-wrapper .buy-header-container .buy-header-desc.float-right {
+  width: 46%;
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  .buy-wrapper .buy-header-container .buy-header-desc.float-left,
+  .buy-wrapper .buy-header-container .buy-header-desc.float-right {
+    width: 100%;
+    float: none;
+  }
+}
+.buy-wrapper .buy-header-container .buy-header-desc.float-left li:before,
+.buy-wrapper .buy-header-container .buy-header-desc.float-right li:before {
+  content: "\00BB";
+}
+.buy-wrapper .buy-header-container .buy-header-desc.float-left li ul,
+.buy-wrapper .buy-header-container .buy-header-desc.float-right li ul {
+  padding-left: 20px;
+}
+.buy-wrapper .buy-header-container .buy-header-desc.float-left li ul li:before,
+.buy-wrapper .buy-header-container .buy-header-desc.float-right li ul li:before {
+  content: "";
+}
+.buy-wrapper .buy-header-container .buy-header-desc.float-left {
+  margin-right: 8%;
+}
+@media only screen and (max-width: 768px) {
+  .buy-wrapper .buy-header-container .buy-header-desc.float-left {
+    margin: 0 0 8%;
+  }
+}
+.buy-wrapper .buy-header-container .buy-header-desc.float-right {
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.buy-wrapper .buy-column {
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .buy-wrapper .buy-column {
+    width: 46%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .buy-wrapper .buy-column-two {
+    margin-top: 25px;
+  }
+}
+.buy-wrapper .select-label {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.buy-wrapper .beta-image-container {
+  margin-top: 25px;
+}
+.buy-wrapper .beta-image {
+  width: 100%;
+  height: 0;
+  padding-bottom: 18%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.buy-wrapper .buy-ctas {
+  margin-top: 25px;
+}
+.buy-wrapper .wtb-button {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-indent: -3px;
+  background-color: #713000;
+  border: 2px solid #f07113;
+  box-shadow: 3px 3px 10px 1px rgba(240, 113, 19, 0.6);
+  line-height: 40px;
+  white-space: nowrap;
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+.buy-wrapper .wtb-button > span {
+  text-shadow: 0 0 18px #f07113;
+}
+.buy-wrapper .wtb-button:hover {
+  background-color: #aa4800;
+}
+.buy-wrapper .product-img {
+  background-image: url('../../../../../../../../content/dam/atvi/callofduty/blackops4/buy/Call-of-Duty_BlackOps4_box-art.jpg');
+  height: 0;
+  padding-bottom: 141.55%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.buy-wrapper .product-img img {
+  display: none;
+}
+.buy-wrapper .retailer-coming-soon {
+  margin-top: 20px;
+}
+.buy-wrapper .coming-soon-message {
+  color: #dbbd40;
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px #f07113;
+  letter-spacing: 3px;
+  text-indent: -3px;
+  border: 2px solid #f07113;
+  box-shadow: 3px 3px 10px 1px rgba(240, 113, 19, 0.6);
+  padding: 10px;
+  cursor: not-allowed;
+}
+.buy-wrapper .disclaimer-text-container {
+  margin-top: 100px;
+}
+.buy-wrapper .disclaimer-text-container p:nth-child(n+2) {
+  margin-top: 1em;
+}
+

@@ -1,0 +1,39 @@
+(function()
+{	var scripts=['//embeddedcloud.pricespider.com/js366/tabcontainerv1.js'];
+	for (var i=0;i<scripts.length;i++)
+		_ps_LoadJavaScript(scripts[i],_ps_ScriptLoadedCallback,scripts[i],true);
+})();
+if (!document._ps_ImpressionId) document._ps_ImpressionId='2cef2d76-2707-48d2-a6cb-ba4f36c4a6c7';
+try{pswtb=pswtb||{};}catch(ex){pswtb={}};pswtb.global=pswtb.global||{};if (!pswtb.global.utid) pswtb.global.utid={sourceType:'URLParam',paramName:'ctid'};
+
+// InitJavascript
+function ps_WidgetInit_93f95e0b4bd74f65a87972937ee66735(options) 
+{
+  var respContContent = pswtb.core.getParentOption(
+    options.parentInstanceGuid, 
+    pswtb.core.widgetType.ResponsiveContainerV1, 
+    'content');
+  
+  if (respContContent && respContContent.layout.ContainerType == pswtb.responsiveContainer.containerTypes.Lightbox)
+  {
+    pswtb.core.addEventHandler(
+      options,
+      pswtb.core.eventType.Dispose,
+      false,
+      function (params)
+      { 
+        jQuery('body').toggleClass('ps_modalOpen');
+      }
+    );
+    
+    pswtb.core.addEventHandler(
+      options,
+      pswtb.core.eventType.Show,
+      false,
+      function (params)
+      {
+        jQuery('body').toggleClass('ps_modalOpen');
+      }
+    );
+  }
+}

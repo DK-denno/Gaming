@@ -1,0 +1,744 @@
+/************************
+ * STRUCTURAL RULES
+ * shared across all sites
+ * foundation rules
+ *************************/
+/* 
+
+TABLE OF CONTENTS
+
+00  GENERAL
+01  MODAL
+02  SPRITES
+03  MENU BAR
+04  DROP DOWN MENUS
+05  LOGIN / REGISTRATION
+06  LOCALE MENU
+07  EXPLORE MENU
+08  IDENTITY MENU
+09	NOTIFICATION MENU
+10  UTILITIES
+
+*/
+/**
+ * Z STACKING ORDER
+ * 
+ * 10100 - modal blocker
+ * 10200 - bar
+ * 10300 - bar buttons
+ * 10400 - bar panels
+ * 10500 - bar button bottom border
+ * 
+ */
+.SSO-BAR {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+  /* 	-webkit-box-shadow: 0 2px 6px #000; */
+  /* 	-moz-box-shadow: 0 2px 6px #000; */
+  /* 	box-shadow: 0 2px 6px #000; */
+  z-index: 10200;
+}
+/*************************
+	01 MODAL
+ *************************/
+#sso-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10100;
+  -moz-opacity: 0.25;
+  opacity: .25;
+  filter: alpha(opacity=25);
+  background-color: #000;
+}
+#sso-modal.on {
+  display: block;
+}
+#sso-modal,
+#sso-modal.off {
+  display: none;
+}
+#sso-modal.elite-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10100;
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  background-color: #000;
+  background-image: url(../images/elite_blur_BG.jpg);
+  background-position: top center;
+}
+/*************************
+	02 SPRITES
+ *************************/
+.SSO-BAR .sprite {
+  display: block;
+  float: left;
+  background-color: transparent;
+  background-position: -99999px -99999px;
+  background-repeat: no-repeat;
+  text-indent: -9999em;
+  background-image: url(../images/sso-bar-sprite.png);
+}
+/* menu arrows */
+.SSO-BAR .sso-menu-cta.sprite {
+  text-indent: 0;
+}
+.SSO-BAR .sprite * {
+  text-indent: 0;
+  background: auto;
+}
+/*************************
+	03 MENU BAR
+ *************************/
+.SSO-BAR #sso-bar-wrapper,
+.SSO-BAR #sso-bar-menu {
+  overflow: visible !important;
+}
+/* the main container */
+.SSO-BAR #sso-bar-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  height: 40px;
+  position: relative;
+  background-color: black;
+}
+/* the primary menu */
+.SSO-BAR #sso-bar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* primary menu items */
+.SSO-BAR #sso-bar-menu > li {
+  float: left;
+  vertical-align: bottom;
+  position: relative;
+  z-index: 10300;
+  text-align: left;
+}
+/* clicked menu items */
+/* draw a line over the border to blend the element with its nested content panel */
+.SSO-BAR #sso-bar-menu > li.is-active:before {
+  content: '\0020';
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  /* 	height: 1px; */
+  z-index: 10500;
+}
+.SSO-BAR #sso-bar-menu > li.off {
+  display: none;
+}
+.SSO-BAR #sso-bar-menu > li.on {
+  display: block;
+}
+/* primary menu item links */
+.SSO-BAR #sso-bar-menu > li > a {
+  display: block;
+  padding-left: 9px;
+  padding-right: 9px;
+  line-height: 40px;
+}
+.SSO-BAR #sso-bar-menu > li#menu-identity > a {
+  width: 20px;
+  height: 40px;
+}
+.SSO-BAR #sso-bar-menu > li#menu-identity {
+  background-image: url(../images/dark-cog.png);
+  background-repeat: no-repeat;
+}
+.SSO-BAR #sso-bar-menu > li.is-active#menu-identity {
+  background-image: url(../images/light-cog.png);
+  border-bottom: 1px solid white;
+}
+/*PORT-1984*/
+body .SSO-BAR #sso-bar-menu > #menu-premium {
+  display: none;
+}
+/*************************
+	04 DROP DOWN MENUS
+ *************************/
+.SSO-BAR .sso-content-panel {
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 40px;
+  padding: 16px;
+  /* 	left: -1px; */
+  right: auto;
+  -webkit-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.75);
+}
+/* nested content panel menus */
+.SSO-BAR .sso-content-panel menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* nested content panel menu items */
+.SSO-BAR .sso-content-panel menu > li,
+.SSO-BAR .sso-content-panel menu > li > a {
+  white-space: nowrap;
+  line-height: 2em;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.SSO-BAR .sso-content-panel menu > li > a {
+  text-align: left;
+}
+.SSO-BAR .sso-content-panel .menu-close-button:hover {
+  background-position: -20px -234px;
+}
+.SSO-BAR #sso-bar-menu > li.is-active > .sso-content-panel {
+  display: block;
+  /* show the panel */
+  z-index: 10400;
+}
+.SSO-BAR #sso-bar-menu hr {
+  color: #ADADAD;
+  height: 2px;
+  background-color: #ADADAD;
+  border: none;
+}
+/************************* 
+	05 LOGIN / REG
+*************************/
+.SSO-BAR #sso-bar-menu > #menu-login-register {
+  padding: 9px 9px 5px 9px;
+  line-height: 22px;
+  /* override 40px line height */
+}
+.SSO-BAR #sso-bar-menu > #menu-login-register > a {
+  line-height: 22px;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.SSO-BAR #or {
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: top;
+  line-height: 22px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+/* Possibly taking out for PORT-1289 */
+/* .SSO-BAR #or:before { */
+/* 	content: '\0020'; */
+/* 	display: block; */
+/* 	position: absolute; */
+/* 	top: -12px; */
+/* 	left: 50%; */
+/* 	width: 1px; */
+/* 	height: 40px; */
+/* 	z-index: -1; */
+/* } */
+/* reg form */
+.SSO-BAR #sso-bar-menu > #menu-login-register .sso-content-panel {
+  width: 600px;
+}
+.SSO-BAR #sso-login-register #sso-login,
+.SSO-BAR #sso-login-register #sso-register {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.SSO-BAR #sso-login-register #sso-login {
+  padding-right: 15px;
+  border-right: 1px solid transparent;
+}
+.SSO-BAR #sso-login-register #sso-register {
+  padding-left: 16px;
+}
+.SSO-BAR #sso-login-register-forms .input-container input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  line-height: 22px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.SSO-BAR #sso-login-register-forms .input-container {
+  padding: 2px;
+}
+.SSO-BAR #sso-login-register #sso-register-text,
+.SSO-BAR #sso-login-register-forms label {
+  margin-top: 9px;
+  display: block;
+}
+.SSO-BAR #sso-login-register-forms button {
+  display: inline-block;
+  line-height: 22px;
+  padding: 0 9px;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: inherit;
+}
+/* match button */
+.SSO-BAR #sso-forgot-password {
+  line-height: 22px;
+  display: inline-block;
+  margin-left: 9px;
+}
+.SSO-BAR .feedback-control {
+  display: none;
+}
+.SSO-BAR .error .feedback-control {
+  display: block;
+}
+.SSO-BAR form .actions {
+  margin-top: 16px;
+  float: left;
+}
+.SSO-BAR fieldset {
+  margin: 0;
+  padding: 0;
+}
+.SSO-BAR #sso-login-register .facebook {
+  clear: both;
+  padding-top: 16px;
+  position: relative;
+}
+.SSO-BAR #sso-login-register .facebook p {
+  line-height: 48px;
+  padding: 0 16px;
+  background-color: #222;
+}
+.SSO-BAR #sso-login-register .facebook a {
+  position: absolute;
+  top: 28px;
+  right: 16px;
+  display: inline-block;
+  line-height: 24px;
+  padding-left: 9px;
+  padding-right: 9px;
+  background-color: #3B5998;
+  /* FB blue */
+}
+/* FB icon */
+.SSO-BAR #sso-login-register .facebook a {
+  display: inline-block;
+  padding-left: 32px;
+  background-repeat: no-repeat;
+  background-position: -8px -358px;
+  background-image: url(../images/sso-bar-sprite.png);
+}
+/*************************
+	 06 LOCALE MENU
+*************************/
+#menu-locale {
+  width: 55px;
+}
+#menu-locale #sso-country-menu-label {
+  background-image: url(../images/dark-down-arrow.png);
+  background-position: 22px;
+  width: 37px;
+}
+#menu-locale.is-active #sso-country-menu-label {
+  background-image: url(../images/light-down-arrow.png);
+}
+.SSO-BAR #sso-locale-chooser.two-col {
+  width: 320px;
+}
+.SSO-BAR #sso-locale-chooser.two-col menu > li {
+  float: left;
+  width: 50%;
+}
+.SSO-BAR #sso-country-menu-label {
+  line-height: 40px;
+  height: 11px;
+  padding-top: 15px;
+  /* dont override arrow .sprite right padding */
+  padding-bottom: 14px;
+  display: block;
+}
+/* the selected locale flag */
+.SSO-BAR #sso-locale-menu-label {
+  height: 11px;
+  width: 16px;
+  text-indent: -9999em;
+  overflow: hidden;
+}
+.SSO-BAR #sso-bar-menu > li.is-active #sso-locale-menu-label {
+  -moz-opacity: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* locale flags */
+.SSO-BAR #sso-locale-chooser #sso-locale-items li a.flag {
+  float: left;
+  width: 16px;
+  height: 11px;
+  margin: 8px 8px 0 0;
+  display: block;
+  padding: 0;
+  text-indent: -9999em;
+}
+#sso-locale-items hr {
+  width: 145px;
+  float: left;
+}
+.SSO-BAR .US,
+#cod-footer #sso-locale-menu-label.US {
+  background-position: 0 0;
+}
+.SSO-BAR .CA,
+#cod-footer #sso-locale-menu-label.CA {
+  background-position: 0 -11px;
+}
+.SSO-BAR .AU,
+#cod-footer #sso-locale-menu-label.AU {
+  background-position: 0 -22px;
+}
+.SSO-BAR .FR,
+#cod-footer #sso-locale-menu-label.FR {
+  background-position: 0 -33px;
+}
+.SSO-BAR .IT,
+#cod-footer #sso-locale-menu-label.IT {
+  background-position: 0 -44px;
+}
+.SSO-BAR .ES,
+#cod-footer #sso-locale-menu-label.ES {
+  background-position: 0 -55px;
+}
+.SSO-BAR .NO {
+  background-position: 0 -66px;
+}
+.SSO-BAR .SE {
+  background-position: 0 -77px;
+}
+.SSO-BAR .DK {
+  background-position: 0 -88px;
+}
+.SSO-BAR .FI {
+  background-position: 0 -99px;
+}
+.SSO-BAR .NL {
+  background-position: 0 -110px;
+}
+.SSO-BAR .BR,
+.SSO-BAR .PT {
+  background-position: 0 -121px;
+}
+.SSO-BAR .GB,
+#cod-footer #sso-locale-menu-label.GB {
+  background-position: 0 -132px;
+}
+.SSO-BAR .DE,
+#cod-footer #sso-locale-menu-label.DE {
+  background-position: 0 -143px;
+}
+.SSO-BAR .BE {
+  background-position: 0 -154px;
+}
+.SSO-BAR .LU {
+  background-position: 0 -165px;
+}
+.SSO-BAR .RU {
+  background-position: 0 -176px;
+}
+.SSO-BAR .PL {
+  background-position: 0 -187px;
+}
+.SSO-BAR .NZ {
+  background-position: 0 -198px;
+  background-color: #fff;
+}
+.SSO-BAR .MX {
+  background-position: 0 -209px;
+}
+.SSO-BAR .JA {
+  background-position: 0 -219px;
+}
+/**************************************************
+	07 EXPLORE/SUPPORT MENU
+**************************************************/
+.SSO-BAR #sso-sites-chooser {
+  width: 250px;
+}
+.SSO-BAR #menu-explore,
+.SSO-BAR #sso-explore-menu-label {
+  width: 125px;
+  text-align: left;
+}
+.SSO-BAR #menu-support,
+.SSO-BAR #sso-support-menu-label {
+  width: auto;
+}
+.SSO-BAR #menu-explore {
+  background-image: url(../images/dark-down-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 90px 3px;
+}
+.SSO-BAR #menu-explore.is-active {
+  background-image: url(../images/light-down-arrow.png);
+}
+.SSO-BAR menu#sso-bar-menu li#menu-explore {
+  border-right: 2px solid #1c1c1c;
+  border-left: 2px solid #1c1c1c;
+}
+.SSO-BAR menu#sso-bar-menu li#menu-support,
+.SSO-BAR menu#sso-bar-menu li#menu-locale {
+  border-right: 2px solid #1c1c1c;
+}
+#sso-support-menu-label {
+  width: 85px;
+}
+/*************************
+	08 IDENTITY MENU
+*************************/
+/* no avatar exists */
+.SSO-BAR #menu-identity > a > span,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li > a > span,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.facebook > a > span {
+  line-height: 40px;
+  display: inline-block;
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 -310px;
+  background-image: url(../images/sso-bar-sprite.png);
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li > a > span {
+  float: left;
+}
+/* check marks */
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li > a {
+  text-overflow: clip;
+  /* override the default for FF */
+  position: relative;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li > a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '\0020';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: right -390px;
+  background-image: url(../images/sso-bar-sprite.png);
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.on > a:after {
+  background-position: right -430px;
+}
+/* platforms */
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.xbl:after,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.psn:after,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.steam:after,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.facebook:after {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  /*  checkmark */
+  content: '\0020';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(../images/sso-bar-sprite.png);
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.xbl:after {
+  background-position: 14px -470px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.on.xbl:after,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.xbl:hover:after {
+  background-position: 14px -470px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.psn:after {
+  background-position: 14px -510px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.on.psn:after,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.psn:hover:after {
+  background-position: 14px -510px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.steam:after {
+  background-position: -40px -550px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.on.steam:after,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.steam:hover:after {
+  background-position: 0 -550px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.facebook:after {
+  background-position: -40px -590px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.on.facebook:after,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.facebook:hover:after {
+  background-position: 0 -590px;
+}
+/* special cases for FB */
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.facebook > a > span {
+  background-position: 0 -350px;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.facebook > a:after {
+  content: none;
+}
+.SSO-BAR #menu-identity.with-img a > span,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li.with-img > a > span {
+  padding-left: 0;
+  background: none;
+}
+/* current identity has an avatar */
+.SSO-BAR #menu-identity > a > img,
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li > a > img {
+  width: 24px;
+  height: 24px;
+  vertical-align: top;
+  margin: 8px 8px 0 8px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #000;
+}
+/* remove default padding */
+/*
+.SSO-BAR #sso-bar-menu #menu-identity > a {
+	padding-left: 0;
+}
+*/
+.SSO-BAR #menu-identity .sso-content-panel {
+  width: 235px;
+}
+.SSO-BAR #menu-identity .sso-content-panel.single-identity #user-identities,
+.SSO-BAR #menu-identity .sso-content-panel.account-only #user-identities {
+  display: none;
+}
+/* position to the left of the identites list */
+.SSO-BAR #menu-identity .sso-content-panel #account-actions {
+  text-align: center;
+}
+/* width controlled by container, reset position */
+.SSO-BAR #menu-identity .sso-content-panel.single-identity #account-actions,
+.SSO-BAR #menu-identity .sso-content-panel.account-only #account-actions {
+  width: auto;
+  position: static;
+  top: auto;
+  left: auto;
+}
+/* list of identities */
+.SSO-BAR #menu-identity .sso-content-panel #user-identities h3 {
+  line-height: 2;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li {
+  margin: 3px 0 0 0;
+  text-align: left;
+}
+.SSO-BAR #menu-identity .sso-content-panel #user-identities li:first-child {
+  margin-top: 0;
+}
+/*************************
+ 09 NOTIFICATION MENU
+*************************/
+.SSO-BAR #menu-notification .sso-content-panel.has-alerts {
+  width: 320px;
+}
+.SSO-PAGE h3#notification-no-alerts {
+  width: 195px;
+}
+/* the notification icon */
+.SSO-BAR #menu-notification #sso-notification-menu-label {
+  padding: 0;
+  height: 40px;
+  width: 24px;
+  background-position: 0 -254px;
+}
+/* the iOS style red circle indicator */
+.SSO-BAR #menu-notification #sso-notification-count {
+  display: none;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  margin-left: 15px;
+  margin-top: 2px;
+  background: #f00;
+  color: #fff;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 14px;
+}
+/* the icon next to the notification title */
+.SSO-BAR #menu-notification .sso-notification-alert-icon {
+  width: 16px;
+  height: 16px;
+  background-position: 0 -294px;
+  margin-left: -24px;
+  position: absolute;
+}
+/* single notification */
+.SSO-BAR .sso-notification-item {
+  padding-left: 18px;
+}
+.SSO-BAR #sso-notification-no-alert.sso-notification-item {
+  padding-left: 0;
+  font-size: 13px;
+}
+.SSO-BAR .sso-notification-item p {
+  margin: 12px 0;
+  color: black;
+}
+/* Profile percentage notification */
+.SSO-BAR .sso-notification-item #profile-completion-text {
+  margin: 0;
+}
+.SSO-BAR .sso-notification-item ul {
+  padding-left: 15px;
+  padding-bottom: 12px;
+  line-height: 1.3em;
+}
+/*************************
+	10 UTILITIES
+ *************************/
+.SSO-BAR .cf:before,
+.SSO-BAR .cf:after {
+  content: "";
+  display: table;
+  background-color: red !important;
+}
+.SSO-BAR .cf:after {
+  clear: both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.SSO-BAR .cf {
+  zoom: 1;
+}
+/* arrow */
+.SSO-BAR .panel-cta:after {
+  content: "\0020";
+  width: 10px;
+  height: 20px;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-position: right -295px;
+  background-image: url(../images/sso-bar-sprite.png);
+  display: inline-block;
+  padding-left: 4px;
+}
+

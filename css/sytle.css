@@ -4,7 +4,6 @@
   background-size: cover;
   background-position: center;
   padding: 100px;
-  align-content: space-around;
   padding-bottom: 100px;
 }
 #racing:hover{
@@ -20,8 +19,6 @@
   background-size: cover;
   background-position: center;
   padding: 100px;
-  align-content: space-around;
-
 }
 #sports:hover{
   transition: 1s ease;
@@ -36,8 +33,6 @@
   background-size: cover;
   background-position: center;
   padding: 100px;
-  align-content: space-around;
-
 }
 #fighting:hover{
   transition: 1s ease;
@@ -52,8 +47,6 @@
   background-size: cover;
   background-position: center;
   padding: 100px;
-  align-content: space-around;
-
 }
 #action:hover{
   transition: 1s ease;
@@ -63,12 +56,11 @@
   transition: 1s ease;
 }
 #war{
-  background-image: url("../image/war.jpeg");
+  background-image: url("../image/fight1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 100px;
-  align-content: space-around;
 }
 #war:hover{
   transition: 1s ease;
@@ -83,4 +75,7 @@ body{
 #logo{
   margin-left: 70px;
   margin-right: 40px;
+}
+h1{
+  font-family: 'Khand', sans-serif;
 }
