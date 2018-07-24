@@ -2,7 +2,6 @@ img{
   height:25%px;
   width: 100%;
   display: center;
-
 }
 
   .carousel-inner > .item > a > img {
@@ -10,32 +9,45 @@ img{
       align-items:  center;
       height: 50%;
 }
+nav{
+  height:40px;
+  width: 100%;
+}
 #myCarousel{
 background-color: lightgreen;
 height:25%px;
 width: 100%;
 display: center;
-
+}
+.carousel {
+  float :left;
+padding: 0;
+margin: 0;
+}
+#games{
+  background-color: grey;
+  padding: 0;
+  margin:0;
 }
 h3{
   font-family: fantasy;
   color:black;
-  font-size: 40px;
+  font-size: 70px;
 }
 p{
   color: black;
-  font-size: 23px;
+  font-size: 35px;
 }
 h{
   color: black;
   font-size: 73px;
 }
 .jumbotron{
-  background-color: blue;
+  background-color: darkgrey;
   padding: 0;
   margin-left: 0;
 }
 .container{
-  padding-right: 50px;
-  barckground-color: darkgrey;
+  padding:0px;
+  barckground-color:blue;
 }
