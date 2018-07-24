@@ -1,0 +1,30 @@
+img{
+  height:50%px;
+  width: 100%;
+  display: center;
+
+}
+
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      align-items:  center;
+      height: 50%;
+}
+#myCarousel{
+background-color: lightgreen;
+}
+h3{
+  color:black;
+  font-size: 26px;
+}
+p{
+  color: black;
+  font-size: 23px;
+}
+h{
+  color: black;
+  font-size: 73px;
+}
+.jumbotron{
+  background-color: blue;
+}
