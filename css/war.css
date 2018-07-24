@@ -1,0 +1,16 @@
+h2{
+  color:red;
+  font-family: 'Lobster', cursive;
+}
+h3{
+  color:white;
+}
+body{
+  background-image: url('../image/bg2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container{
+  background-image: url('../image/bg.png');
+}
