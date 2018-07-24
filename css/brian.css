@@ -1,21 +1,26 @@
 img{
-  height:50%px;
+  height:25%px;
   width: 100%;
   display: center;
 
 }
 
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width:100%;
       align-items:  center;
       height: 50%;
 }
 #myCarousel{
 background-color: lightgreen;
+height:25%px;
+width: 100%;
+display: center;
+
 }
 h3{
+  font-family: fantasy;
   color:black;
-  font-size: 26px;
+  font-size: 40px;
 }
 p{
   color: black;
@@ -27,4 +32,10 @@ h{
 }
 .jumbotron{
   background-color: blue;
+  padding: 0;
+  margin-left: 0;
+}
+.container{
+  padding-right: 50px;
+  barckground-color: darkgrey;
 }
