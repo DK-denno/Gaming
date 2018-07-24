@@ -1,0 +1,23 @@
+h1{
+  font-style: oblique;
+  font-family: cursive;
+  color: black;
+  font-size: 70px;
+  text-align: center;
+}
+body{
+  background-image: url("/home/victor/Documents/Gaming/image/ronaldo.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1:hover{
+  color: red;
+}
+h2{
+  color:blue;
+  font-size: 70px;
+  text-align: center;
+  font-style: oblique;
+  font-family: fantasy;
+}

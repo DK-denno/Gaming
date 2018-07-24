@@ -1,0 +1,33 @@
+h1{
+  font-size: 80px;
+  font-style: oblique;
+  font-family: cursive;
+  text-align: center;
+  color: yellow;
+  background-image: url("../image/ufc.jpeg");
+  height:750px;
+  repeat: none;
+}
+circle img {
+transition: 1s ease;
+}
+
+.circle img:hover {
+border-radius:50%;
+transition: 1s ease;
+}
+.row2{
+  margin-right: 20%;
+  font-size: 40px;
+  margin-top: -55px;
+}
+.row1{
+  margin-left: 50%;
+  font-size: 40px;
+}
+.scar{
+  background-color: yellow;
+}
+.row1:hover{
+  color: red;
+}

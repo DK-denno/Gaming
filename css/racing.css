@@ -1,0 +1,128 @@
+body{
+background-color: blue;
+background-image: url("../image/flagbackground.jpg");
+background-attachment: fixed;
+background-repeat: repeat-x;
+color: white;
+  /* repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #606dbc 10px,
+  #465298 10px,
+  #465298 20px
+); */
+}
+.jumbotron{
+background-image: url("../image/gameroom.jpeg");
+background-repeat: repeat-x;
+color: white;
+text-align: center;
+
+}
+.jumbotron:hover{
+   opacity:0.5;
+   color:black;
+   border-style: solid;
+   border-color: red;
+}
+#title{
+  text-align: center;
+  font-family: cursive;
+}
+
+
+.container a{
+  height: 200px;
+  display: block;
+}
+
+
+.asphalt8{
+  background-image: url("../image/asphalt8.jpg");
+  height: 200px;
+  background-size: cover;
+  margin-right: 100px;
+  text-align: center;
+  /* align-items: center; */
+  /* position: relative; */
+}
+.asphalt8:hover{
+  opacity:0.5;
+  border-style: solid;
+  border-color: red;
+}
+
+
+.needforspeed{
+  background-image: url("../image/needforspeed.jpg");
+  height: 200px;
+  background-size: cover;
+  margin-right: 100px;
+  text-align: center;
+}
+.needforspeed:hover{
+  opacity:0.5;
+  border-style: solid;
+  border-color: red;
+}
+
+
+.dirtrally{
+  background-image: url("../image/dirtrally.jpeg");
+  height: 200px;
+  background-size: cover;
+  margin-right: 100px;
+  text-align: center;
+  margin-top: 50px;
+  color:black;
+}
+.dirtrally:hover{
+  opacity:0.5;
+  border-style: solid;
+  border-color: red;
+}
+
+
+.mariokart{
+background-image: url("../image/mariokart.jpeg");
+height: 200px;
+background-size: cover;
+margin-right: 100px;
+text-align: center;
+margin-top: 50px;
+}
+.mariokart:hover{
+  opacity:0.5;
+  border-style: solid;
+  border-color: red;
+}
+
+
+.forza{
+background-image: url("../image/forzahorizon.jpg");
+height: 200px;
+background-size: cover;
+margin-right: 100px;
+text-align: center;
+  margin-top: 50px;
+}
+.forza:hover{
+  opacity:0.5;
+  border-style: solid;
+  border-color: red;
+}
+
+
+.trackmania{
+background-image: url("../image/trackmaniaturbo.jpg");
+height: 200px;
+background-size: cover;
+margin-right: 100px;
+text-align: center;
+  margin-top: 50px;
+}
+.trackmania:hover{
+  opacity:0.5;
+  border-style: solid;
+  border-color: red;
+}
