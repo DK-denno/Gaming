@@ -4,6 +4,7 @@ body{
 .rowvi{
 margin-left: 30%;
 color: beige;
+margin-top: -2%;
 font-family: 'Frijole', cursive;
 font-family: 'Nosifer', cursive;
 }
@@ -27,4 +28,7 @@ font-family: 'Nosifer', cursive;
     color:red;
     margin-left: 65%;
     margin-top: -7%;
+}
+.d{
+    margin-top: -53%;
 }
