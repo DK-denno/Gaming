@@ -31,13 +31,20 @@ text-align: center;
 }
 
 
+.container a{
+  height: 200px;
+  display: block;
+}
+
+
 .asphalt8{
   background-image: url("../image/asphalt8.jpg");
   height: 200px;
   background-size: cover;
   margin-right: 100px;
   text-align: center;
-
+  /* align-items: center; */
+  /* position: relative; */
 }
 .asphalt8:hover{
   opacity:0.5;
