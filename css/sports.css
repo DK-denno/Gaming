@@ -4,7 +4,7 @@ h1{
   font-family: cursive;
   text-align: center;
   color: yellow;
-  background-image: url("/home/victor/Documents/Gaming/lindsay/images/ufc.jpeg");
+  background-image: url("../image/ufc.jpeg");
   height:750px;
   repeat: none;
 }
@@ -17,5 +17,17 @@ border-radius:50%;
 transition: 1s ease;
 }
 .row2{
-  float: right;
+  margin-right: 20%;
+  font-size: 40px;
+  margin-top: -55px;
+}
+.row1{
+  margin-left: 50%;
+  font-size: 40px;
+}
+.scar{
+  background-color: yellow;
+}
+.row1:hover{
+  color: red;
 }
