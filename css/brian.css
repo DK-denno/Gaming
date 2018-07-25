@@ -2,6 +2,8 @@ img{
   height:25%px;
   width: 100%;
   display: center;
+  padding: 0:inherit;
+  margin: 0;
 }
 
   .carousel-inner > .item > a > img {
@@ -29,17 +31,32 @@ margin: 0;
   padding: 0;
   margin:0;
 }
+#games1{
+  background-color: lightgrey;
+  padding: 0;
+  margin:0;
+}
 h3{
   font-family: fantasy;
   color:black;
   font-size: 70px;
 }
+p1{
+  color: INDIGO;
+  font-size: 50px;
+  font-family:impact ;
+}
 p{
   color: black;
-  font-size: 35px;
+  font-size: 18px;
+  font-family:impact ;
 }
 h{
   color: black;
+  font-size: 73px;
+}
+h3{
+  color: YELLOW;
   font-size: 73px;
 }
 .jumbotron{
@@ -50,4 +67,11 @@ h{
 .container{
   padding:0px;
   barckground-color:blue;
+  background-image: url("../image/BAC.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panel{
+  background-color: black;
+  width: 100%;
 }
