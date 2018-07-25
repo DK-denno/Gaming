@@ -1,6 +1,9 @@
-  var text="";
-$(document).ready(function(){
-  $("#submit").click(function(evemt){
-    alert('YOUR COMMENT HAS BEEN APPRECIATED');
-  });
-});
+$(document).ready(function() {
+        $("#submit").click(function(event) {
+            event.preventDefault();
+          var commentInput = $("input.comm").val();
+          $("#comment").prepend('<li>'+ commentInput + '</li>');
+          alert('Your comment has been appreciated');
+
+        });
+      });
