@@ -1,7 +1,16 @@
+.container2{
+  border-color: black;
+   box-shadow: blue;
+   padding: 0px;
+
+    height:100%;
+    width: 100%:
+    background-image: url("../image/mkh3.jpeg");
+}
 .container-fluid{
   background-color: skyblue;
   padding-top:0;
-  background-image: url("../image/uf3.jpeg");
+
 }
 img{
   height:25%px;
@@ -82,7 +91,7 @@ h3{
   background-repeat: no-repeat;
   background-size: cover;
   border-box:40px  solidbrown;
-    background-image: url("../image/BAC.jpeg");
+
 }.container1{
   padding:0px;
   barckground-color:blue;
@@ -118,5 +127,11 @@ float
   padding: 0:
   margin:0;
   display: center;
-  background-color: lightblue;
+
+}
+.yo2{
+  padding: 0:
+  margin:0;
+  display: center;
+
 }
