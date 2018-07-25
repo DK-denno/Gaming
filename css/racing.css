@@ -13,7 +13,7 @@ background-size: cover;
   #465298 20px
 ); */
 }
-.jumbotron{
+.jumbotron1{
 background-image: url("../image/gameroom.jpeg");
 background-repeat: repeat-x;
 color: white;
@@ -145,6 +145,15 @@ text-align: center;
 #previewdirtrally{
   display: none;
 }
+#previewtrackmania{
+  display: none;
+}
+#previewforza{
+  display: none;
+}
+#previewmario{
+  display: none;
+}
 #info{
   text-align:justify;
   margin-top: 100px;
@@ -180,6 +189,43 @@ text-align: center;
   width:300;
   height:200;
 }
+.previewtrackmania{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewforza{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewmario{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
 .table-responsive{
   margin-top: 50px;
+}
+.jumbotron2{
+  background-color: black;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  border-top-style: solid;
+  border-top-color: red;
+  text-align: center;
+}
+.jumbotron2 i{
+  height: 50px;
+  width: 50px;
+  color: red;
 }

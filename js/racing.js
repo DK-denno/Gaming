@@ -16,6 +16,18 @@ $(document).ready(function(){
     event.preventDefault();
     $("#previewdirtrally").slideToggle();
   })
+  $(".previewtrackmania").click(function(event){
+    event.preventDefault();
+    $("#previewtrackmania").slideToggle();
+  })
+  $(".previewforza").click(function(event){
+    event.preventDefault();
+    $("#previewforza").slideToggle();
+  })
+  $(".previewmario").click(function(event){
+    event.preventDefault();
+    $("#previewmario").slideToggle();
+  })
 //
 // $(".asphalt8").click(function() {
 //   window.location = $(this).find("a").attr("href");
