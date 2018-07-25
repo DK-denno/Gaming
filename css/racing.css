@@ -130,6 +130,21 @@ text-align: center;
   border-style: solid;
   border-color: red;
 }
+.checked{
+  color:gold;
+}
+#cheat{
+  display: none;
+}
+#previewasphalt{
+  display: none;
+}
+#previewneedforspeed{
+  display: none;
+}
+#previewdirtrally{
+  display: none;
+}
 #info{
   text-align:justify;
   margin-top: 100px;
@@ -140,4 +155,31 @@ text-align: center;
   text-align: center;
   border-bottom-style: solid;
   border-bottom-color:red;
+}
+.previewasphalt{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewneedforspeed{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewdirtrally{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.table-responsive{
+  margin-top: 50px;
 }
