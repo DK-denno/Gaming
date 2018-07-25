@@ -22,9 +22,6 @@ font-family: 'Nosifer', cursive;
     margin-left: 70%;
     margin-top: -10%;
     color: beige;
-    border-style: solid;
-    border-color: red;
-    background-size: contain;
 }
 .f4{
     color:whitesmoke;
@@ -36,4 +33,12 @@ font-family: 'Nosifer', cursive;
 .f6{
     color: beige;
     font-family: 'Times New Roman', Times, serif;
+}
+.f7{
+    color: beige;
+    margin-left: 50%;
+    margin-top: -35%;
+}
+.f07{
+    color:red;
 }

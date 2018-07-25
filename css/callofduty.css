@@ -27,7 +27,8 @@ font-family: 'Nosifer', cursive;
 .wa{
     color:red;
     margin-left: 65%;
-    margin-top: -10%;
+    margin-top: 0%;
+    
 }
 .d{
     margin-top: -55%;
@@ -35,4 +36,9 @@ font-family: 'Nosifer', cursive;
 }
 .checked{
     color:yellow;
+}
+.d1{
+    margin-left: 50%;
+    margin-top: -80%;
+    margin-bottom: 65%;
 }
