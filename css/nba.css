@@ -2,4 +2,29 @@ body{
   background-image: url("/home/victor/Documents/Gaming/image/steph.jpg");
   background-repeat:no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+h1{
+  font-size: 70px;
+  font-family: fantasy;
+  color: orange;
+  font-style: oblique;
+}
+h2{
+  font-size: 70px;
+  font-family: fantasy;
+  color: blue;
+  font-style: oblique;
+}
+p{
+  font-size: 30px;
+  font-family: fantasy;
+  color: yellow;
+  font-style: oblique;
+}
+.video{
+  display: none;
+}
+.btn{
+  background-color: orange;
 }
