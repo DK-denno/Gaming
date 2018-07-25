@@ -59,3 +59,35 @@ opacity: 0.5;
   margin-left: 55%;
   margin-top: -420px;
 }
+h4{
+  font-size: 70px;
+  font-style: oblique;
+  font-family: fantasy;
+  text-align: center;
+  color: blue;
+
+}
+h5{
+  font-size: 70px;
+  font-style: oblique;
+  font-family: fantasy;
+  text-align: center;
+  color: blue;
+}
+li{
+  font-size: 40px;
+  font-style: oblique;
+  font-family: fantasy;
+  text-align: left;
+  color: orange;
+}
+.checked {
+    color: orange;
+}
+h6{
+  font-size: 60px;
+  font-style: oblique;
+  font-family: fantasy;
+  text-align: justifed;
+  color: green;
+}
