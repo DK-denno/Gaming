@@ -40,3 +40,42 @@ transition: 1s ease;
 transform: scale(1.2);
 transition: 1s ease;
 }
+h3{
+  font-size: 40px;
+  font-family: fantasy;
+  color: orange;
+  font-style: oblique;
+}
+.click{
+  font-size:30px;
+  font-style: oblique;
+  font-family: cursive;
+}
+h4{
+  font-size: 50px;
+  font-family: fantasy;
+  color: orange;
+  font-style: oblique;
+}
+.checked {
+    color: orange;
+    font-size: 30px;
+}
+h5{
+  font-size: 50px;
+  font-family: fantasy;
+  color: orange;
+  font-style: oblique;
+}
+li{
+  font-size:30px;
+  font-style: oblique;
+  font-family: cursive;
+  color: white;
+}
+h6{
+  font-size: 50px;
+  font-family: fantasy;
+  color: orange;
+  font-style: oblique;
+}
