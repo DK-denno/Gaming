@@ -27,8 +27,12 @@ font-family: 'Nosifer', cursive;
 .wa{
     color:red;
     margin-left: 65%;
-    margin-top: -7%;
+    margin-top: -10%;
 }
 .d{
-    margin-top: -53%;
+    margin-top: -55%;
+    display:none;
+}
+.checked{
+    color:yellow;
 }
