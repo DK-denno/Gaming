@@ -30,7 +30,8 @@ font-family: 'Nosifer', cursive;
     margin-top: -10%;
 }
 .d{
-    margin-top: -56%;
+    margin-top: -55%;
+    display:none;
 }
 .checked{
     color:yellow;
