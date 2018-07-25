@@ -1,3 +1,8 @@
+.container-fluid{
+  background-color: skyblue;
+  padding-top:0;
+  background-image: url("../image/uf3.jpeg");
+}
 img{
   height:25%px;
   width: 100%;
@@ -51,16 +56,22 @@ p{
   font-size: 18px;
   font-family:impact ;
 }
+h4{
+  color: black;
+  font-size: 73px;
+}
 h{
   color: black;
   font-size: 73px;
+  font-family: verdana;
 }
 h3{
   color: YELLOW;
   font-size: 73px;
+  display: center;
 }
 .jumbotron{
-  background-color: darkgrey;
+  background-color:indigo;
   padding: 0;
   margin-left: 0;
 }
@@ -70,8 +81,42 @@ h3{
   background-image: url("../image/BAC.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-box:40px  solidbrown;
+    background-image: url("../image/BAC.jpeg");
+}.container1{
+  padding:0px;
+  barckground-color:blue;
+  background-image: url("../image/ufcbac.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-box:40px  solidbrown;
+    background-image: url("../image/BAC.jpeg");
 }
 .panel{
   background-color: black;
   width: 100%;
+}
+.yow2{
+  padding: 0:
+  margin:0;
+  display: center;
+
+}
+.yow1{
+  padding: 0:
+  margin:0;
+  display: center;
+float: right;
+}
+.yow3{
+  padding: 0:
+  margin:0;
+  display: center;
+float
+}
+.yow4{
+  padding: 0:
+  margin:0;
+  display: center;
+  background-color: lightblue;
 }
