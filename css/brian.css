@@ -1,30 +1,137 @@
+.container2{
+  border-color: black;
+   box-shadow: blue;
+   padding: 0px;
+
+    height:100%;
+    width: 100%:
+    background-image: url("../image/mkh3.jpeg");
+}
+.container-fluid{
+  background-color: skyblue;
+  padding-top:0;
+
+}
 img{
-  height:50%px;
+  height:25%px;
   width: 100%;
   display: center;
-
+  padding: 0:inherit;
+  margin: 0;
 }
 
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width:100%;
       align-items:  center;
       height: 50%;
 }
+nav{
+  height:40px;
+  width: 100%;
+}
 #myCarousel{
 background-color: lightgreen;
+height:25%px;
+width: 100%;
+display: center;
+}
+.carousel {
+  float :left;
+padding: 0;
+margin: 0;
+}
+#games{
+  background-color: grey;
+  padding: 0;
+  margin:0;
+}
+#games1{
+  background-color: lightgrey;
+  padding: 0;
+  margin:0;
 }
 h3{
+  font-family: fantasy;
   color:black;
-  font-size: 26px;
+  font-size: 70px;
+}
+p1{
+  color: INDIGO;
+  font-size: 50px;
+  font-family:impact ;
 }
 p{
   color: black;
-  font-size: 23px;
+  font-size: 18px;
+  font-family:impact ;
+}
+h4{
+  color: black;
+  font-size: 73px;
 }
 h{
   color: black;
   font-size: 73px;
+  font-family: verdana;
+}
+h3{
+  color: YELLOW;
+  font-size: 73px;
+  display: center;
 }
 .jumbotron{
-  background-color: blue;
+  background-color:indigo;
+  padding: 0;
+  margin-left: 0;
+}
+.container{
+  padding:0px;
+  barckground-color:blue;
+  background-image: url("../image/BAC.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-box:40px  solidbrown;
+
+}.container1{
+  padding:0px;
+  barckground-color:blue;
+  background-image: url("../image/ufcbac.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-box:40px  solidbrown;
+    background-image: url("../image/BAC.jpeg");
+}
+.panel{
+  background-color: black;
+  width: 100%;
+}
+.yow2{
+  padding: 0:
+  margin:0;
+  display: center;
+
+}
+.yow1{
+  padding: 0:
+  margin:0;
+  display: center;
+float: right;
+}
+.yow3{
+  padding: 0:
+  margin:0;
+  display: center;
+float
+}
+.yow4{
+  padding: 0:
+  margin:0;
+  display: center;
+
+}
+.yo2{
+  padding: 0:
+  margin:0;
+  display: center;
+
 }
