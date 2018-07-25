@@ -4,3 +4,11 @@ $(document).ready(function(){
     $(".video").slideToggle();
   });
 });
+
+
+$(document).ready(function(){
+  $(".pes").click(function(event){
+    event.preventDefault();
+    $(".video1").slideToggle();
+  });
+});
