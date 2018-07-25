@@ -17,7 +17,7 @@ border-radius:50%;
 transition: 1s ease;
 }
 .row2{
-  margin-right: 20%;
+  margin-right: 50%;
   font-size: 40px;
   margin-top: -55px;
 }
@@ -37,7 +37,7 @@ transition: 1s ease;
   margin-top: -55px;
 }
 .row4{
-  margin-left: 100%;
-  font-size: 40px;
-  margin-top: -55px;
+  margin-left: 80%;
+  font-size: 43px;
+  margin-top: -59px;
 }

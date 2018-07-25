@@ -58,3 +58,18 @@ h5{
   color: black;
   text-align: center;
 }
+p{
+  font-size: 49px;px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: black;
+  text-align: center;
+}
+circle img {
+transition: 1s ease;
+}
+
+.circle img:hover {
+border-radius:50%;
+transition: 1s ease;
+}
