@@ -1,5 +1,5 @@
 body{
-  background-image: url("/home/victor/Documents/Gaming/image/steph.jpg");
+  background-image: url("/home/victor/Documents/Gaming/image/bake.png");
   background-repeat:no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -13,13 +13,13 @@ h1{
 h2{
   font-size: 70px;
   font-family: fantasy;
-  color: blue;
+  color: white;
   font-style: oblique;
 }
 p{
   font-size: 30px;
   font-family: fantasy;
-  color: yellow;
+  color: white;
   font-style: oblique;
 }
 .video{
