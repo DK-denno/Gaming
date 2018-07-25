@@ -14,4 +14,29 @@ body{
 }
 .container{
   background-image: url('../image/bg.png');
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+nav a{
+
+  text-decoration: none;
+  color:black;
+}
+nav a:hover{
+  padding:20px;
+  color:white;
+  background-color:black;
+}
+nav li{
+  display:inline;
+  float: right;
+  margin-top:10px;
+}
+.checked {
+    color: orange;
+}
+#password:hover{
+  color:blue;
 }
