@@ -1,0 +1,26 @@
+h1{
+  font-size: 50px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: orange;
+  text-align: center;
+}
+body{
+  background-image: url("/home/victor/Documents/Gaming/image/andres.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2{
+  font-size: 50px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: red;
+  text-align: center;
+}
+li{
+  font-size: 30px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: white;
+  text-align: justified;
+}
