@@ -1,0 +1,75 @@
+h1{
+  font-size: 50px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: orange;
+  text-align: center;
+}
+body{
+  background-image: url("/home/victor/Documents/Gaming/image/andres.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2{
+  font-size: 50px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: red;
+  text-align: center;
+}
+li{
+  font-size: 30px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: white;
+  text-align: justified;
+}
+.video{
+  display: none;
+}
+.pes{
+background-color: red;
+}
+  h3{
+    font-size: 50px;
+    font-style: oblique;
+    font-family: fantasy;
+    color: yellow;
+    text-align: center;
+  }
+  h4{
+    font-size: 49px;px;
+    font-style: oblique;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+  }
+.link{
+  font-size: 35px;
+}
+.checked {
+    color: orange;
+    font-size: 400%;
+}
+h5{
+  font-size: 49px;px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: black;
+  text-align: center;
+}
+p{
+  font-size: 49px;px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: black;
+  text-align: center;
+}
+circle img {
+transition: 1s ease;
+}
+
+.circle img:hover {
+border-radius:50%;
+transition: 1s ease;
+}

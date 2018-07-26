@@ -1,0 +1,44 @@
+body{
+  background-image:url("/home/victor/Documents/Gaming/image/ronda.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+}
+h1{
+  font-family:monospace;
+  font-size: 70px;
+  font-style: oblique;
+  color: blue;
+  text-align: center;
+}
+h2{
+  font-family:monospace;
+  font-size: 70px;
+  font-style: oblique;
+  color: yellow;
+  text-align: left;
+}
+li{
+  font-family:monospace;
+  font-size: 40px;
+  font-style: oblique;
+  color: green;
+  text-align: justify;
+}
+h3{
+  font-family: fantasy;
+  font-size: 60px;
+  font-style: oblique;
+  color: white;
+  text-align: left;
+
+}
+h4{
+  font-family: fantasy;
+  font-size: 60px;
+  font-style: oblique;
+  color: blue;
+  text-align: left;
+}
+.links{
+  font-size: 30px;
+}
