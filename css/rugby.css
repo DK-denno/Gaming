@@ -33,7 +33,7 @@ h3{
   text-align: left;
 }
 .rug{
-  border-color: orange;
+  background-color: orange;
 }
 .video2{
   display: none;
@@ -47,4 +47,38 @@ h4{
 }
 .link{
   font-size: 40px;
+}
+h5{
+  font-size: 50px;
+  font-style: italic;
+  font-family: oblique;
+  color: red;
+  text-align: left;
+}
+.checked{
+  color: Yellow;
+  font-size: 30px;
+}
+h6{
+  font-size: 50px;
+  font-style: normal;
+  font-family: oblique;
+  color: black;
+  text-align: left;
+}
+#habana{
+  height: 10px;
+  width: 10px;
+}
+
+
+.rotate img{
+transition: 1s ease;
+}
+
+.rotate img:hover{
+-webkit-transform: rotateZ(-10deg);
+-ms-transform: rotateZ(-10deg);
+transform: rotateZ(-10deg);
+transition: 1s ease;
 }
