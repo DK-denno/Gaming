@@ -4,3 +4,17 @@ body{
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
+h1{
+  font-size: 70px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: orange;
+  text-align: center;
+}
+h2{
+  font-size: 70px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: black;
+  text-align: right;  
+}
