@@ -1,0 +1,41 @@
+body{
+    background-image: url("https://media.wired.com/photos/5a3c5442e1d4a86600d1eec8/master/w_1338,c_limit/PS4-TA.jpg");
+}
+.h01{
+    color:red;
+    font-size: 200%;
+    margin-top: -1%;
+    margin-left: 3%;
+}
+.v1{
+    margin-left: 30%;
+    font-family: 'Frijole', cursive;
+    font-family: 'Nosifer', cursive;
+    margin-top:-2.5%;
+    margin-bottom: 2.5%;
+}
+#p{
+    border-style: solid;
+    border-color: red;
+    background-size: contain;
+}
+.shrink img {
+    transition: 1s ease;
+    }
+    
+.shrink img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 1s ease;
+    }
+.o{
+    color:red;
+    font-family: 'Times New Roman', Times, serif;
+}
+.v02{
+    margin-left: 30%;
+    font-family: 'Frijole', cursive;
+    font-family: 'Nosifer', cursive;
+
+}

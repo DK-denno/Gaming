@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://images3.alphacoders.com/269/thumb-1920-269925.jpg");
+}
+.h01{
+    color:beige;
+    font-size: 200%;
+    margin-top: -1%;
+}
+.h1{
+    margin-left: 45%;
+    color:beige;
+    font-family: 'Frijole', cursive;
+    font-family: 'Nosifer', cursive;
+    margin-top: -4%;
+}
+.h2{
+   color:beige;
+   margin-left: 35%; 
+}
+.h3{
+    color:beige;
+    font-family:'Times New Roman', Times, serif;
+}
+.h4{
+    margin-left: 40%;
+    color:beige;
+    margin-top:-20%;
+}
+.h5{
+    color:red;
+}

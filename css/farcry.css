@@ -1,0 +1,44 @@
+body{
+    background-image: url("https://images6.alphacoders.com/339/thumb-1920-339086.jpg");
+}
+.checked{
+    color:yellow;
+}
+.f1{
+margin-left: 40%;
+color: beige;
+margin-top: -2%;
+font-family: 'Frijole', cursive;
+font-family: 'Nosifer', cursive;
+}
+.f01{
+    margin-left: 51%;
+    margin-top: -4%;
+}
+.f2{
+    color:whitesmoke;
+}
+.f3{
+    margin-left: 70%;
+    margin-top: -10%;
+    color: beige;
+}
+.f4{
+    color:whitesmoke;
+}
+.f5{
+    color: beige;
+    
+}
+.f6{
+    color: beige;
+    font-family: 'Times New Roman', Times, serif;
+}
+.f7{
+    color: beige;
+    margin-left: 50%;
+    margin-top: -35%;
+}
+.f07{
+    color:red;
+}
