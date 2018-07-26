@@ -5,6 +5,7 @@
     <title>HOME|game_hub</title>
     <link href="image/icon.png" rel="shortcut icon">
     <link href="https://fonts.googleapis.com/css?family=Khand" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/sytle.css" rel="stylesheet">
   </head>
@@ -36,14 +37,15 @@
         <div class="col-md-4">
         <form id="comments">
           <h2>COMMENTS</h2>
-          <input type="text" value="you@example.com"></br>
+          <input type="text" placeholder="you@example.com"></br>
           </br>
-          <input type="text" value="type comment"></br>
+          <input type="text" class="comm" placeholder="type comment"></br>
           </br>
           <button id="submit" type="submit">SUBMIT COMMENT</button>
         </form>
         </div>
         <div class="col-md-8">
+          <p id="comment"></p>
         </div>
       </div>
 
@@ -60,6 +62,7 @@
 
 
     </div>
+  </div>
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

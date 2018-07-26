@@ -6,7 +6,7 @@ h1{
   text-align: center;
 }
 body{
-  background-image: url("/home/victor/Documents/Gaming/image/andres.jpg");
+  background-image: url("../image/andres.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
