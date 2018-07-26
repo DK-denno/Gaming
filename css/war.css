@@ -4,10 +4,8 @@ h2{
 }
 h3{
   color:white;
-<<<<<<< HEAD
-=======
   font-family: 'Pacifico', cursive;
->>>>>>> 7dfcf0b1a35156c354760c18c2b991eed4d0d6a4
+
 }
 body{
   background-image: url('../image/bg2.png');
@@ -42,4 +40,7 @@ nav li{
 }
 #password:hover{
   color:blue;
+}
+#bar{
+  float:right;
 }
