@@ -4,6 +4,7 @@ background-image: url("../image/flagbackground.jpg");
 background-attachment: fixed;
 background-repeat: repeat-x;
 color: white;
+background-size: cover;
   /* repeating-linear-gradient(
   45deg,
   #606dbc,
@@ -12,19 +13,20 @@ color: white;
   #465298 20px
 ); */
 }
-.jumbotron{
+.jumbotron1{
 background-image: url("../image/gameroom.jpeg");
 background-repeat: repeat-x;
 color: white;
 text-align: center;
-
+border-bottom-style: solid;
+border-bottom-color: red
 }
-.jumbotron:hover{
+/* .jumbotron:hover{
    opacity:0.5;
    color:black;
    border-style: solid;
    border-color: red;
-}
+} */
 #title{
   text-align: center;
   font-family: cursive;
@@ -35,7 +37,9 @@ text-align: center;
   height: 200px;
   display: block;
 }
-
+.rowdy{
+  margin-left:150px;
+}
 
 .asphalt8{
   background-image: url("../image/asphalt8.jpg");
@@ -125,4 +129,103 @@ text-align: center;
   opacity:0.5;
   border-style: solid;
   border-color: red;
+}
+.checked{
+  color:gold;
+}
+#cheat{
+  display: none;
+}
+#previewasphalt{
+  display: none;
+}
+#previewneedforspeed{
+  display: none;
+}
+#previewdirtrally{
+  display: none;
+}
+#previewtrackmania{
+  display: none;
+}
+#previewforza{
+  display: none;
+}
+#previewmario{
+  display: none;
+}
+#info{
+  text-align:justify;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#info h1{
+  text-align: center;
+  border-bottom-style: solid;
+  border-bottom-color:red;
+}
+.previewasphalt{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewneedforspeed{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewdirtrally{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewtrackmania{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewforza{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.previewmario{
+  background-color: red;
+  border-style: none;
+  color:white;
+  border-radius: 10%;
+  width:300;
+  height:200;
+}
+.table-responsive{
+  margin-top: 50px;
+}
+.jumbotron2{
+  background-color: black;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  border-top-style: solid;
+  border-top-color: red;
+  text-align: center;
+}
+.jumbotron2 i{
+  height: 50px;
+  width: 50px;
+  color: red;
 }
