@@ -23,9 +23,11 @@ body{
 }
 .h4{
     margin-left: 40%;
-    color:beige;
-    margin-top:-20%;
+    color:beige; 
 }
 .h5{
     color:red;
+}
+.h02{
+    display:none;
 }
