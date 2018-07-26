@@ -5,8 +5,11 @@ h1{
   text-align: center;
   color: yellow;
   background-image: url("../image/ufc.jpeg");
-  height:750px;
+  /* height:750px; */
   repeat: none;
+}
+body{
+  background-color: black;
 }
 circle img {
 transition: 1s ease;
@@ -40,4 +43,24 @@ transition: 1s ease;
   margin-left: 80%;
   font-size: 43px;
   margin-top: -59px;
+}
+#rugby{
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+#sport{
+  margin-left: 150px;
+}
+#fifc{
+  margin-left: 150px;
+  margin-top: 50px;
+}
+.jumbotron{
+  background-color: yellow;
+  text-align: center;
+}
+.fa{
+  text-align: center;
+  background
 }

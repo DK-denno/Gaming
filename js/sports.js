@@ -12,3 +12,11 @@ $(document).ready(function(){
     $(".video1").slideToggle();
   });
 });
+
+
+$(document).ready(function(){
+  $(".rug").click(function(event){
+    event.preventDefault();
+    $(".video2").slideToggle();
+  });
+});
