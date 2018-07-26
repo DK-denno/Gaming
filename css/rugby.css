@@ -1,0 +1,84 @@
+body{
+  background-image: url("/home/victor/Documents/Gaming/image/africa.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+h1{
+  font-size: 70px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: orange;
+  text-align: center;
+}
+h2{
+  font-size: 70px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: black;
+  text-align: left;
+}
+li{
+  font-size: 45px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: white;
+  text-align: justified;
+}
+h3{
+  font-size: 70px;
+  font-style: italic;
+  font-family: cursive;
+  color: yellow;
+  text-align: left;
+}
+.rug{
+  background-color: orange;
+}
+.video2{
+  display: none;
+}
+h4{
+  font-size: 50px;
+  font-style: italic;
+  font-family: cursive;
+  color: orange;
+  text-align: left;
+}
+.link{
+  font-size: 40px;
+}
+h5{
+  font-size: 50px;
+  font-style: italic;
+  font-family: oblique;
+  color: red;
+  text-align: left;
+}
+.checked{
+  color: Yellow;
+  font-size: 30px;
+}
+h6{
+  font-size: 50px;
+  font-style: normal;
+  font-family: oblique;
+  color: black;
+  text-align: left;
+}
+#habana{
+  height: 10px;
+  width: 10px;
+}
+
+
+.rotate img{
+transition: 1s ease;
+}
+
+.rotate img:hover{
+-webkit-transform: rotateZ(-10deg);
+-ms-transform: rotateZ(-10deg);
+transform: rotateZ(-10deg);
+transition: 1s ease;
+}

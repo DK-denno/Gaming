@@ -20,7 +20,7 @@ font-family: 'Nosifer', cursive;
 }
 .f3{
     margin-left: 70%;
-    margin-top: -10%;
+    margin-top: -10%; 
     color: beige;
 }
 .f4{
@@ -41,4 +41,7 @@ font-family: 'Nosifer', cursive;
 }
 .f07{
     color:red;
+}
+.d2{
+    display:none;
 }
