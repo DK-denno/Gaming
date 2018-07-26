@@ -23,7 +23,7 @@ img{
   .carousel-inner > .item > a > img {
       width:100%;
       align-items:  center;
-      height: 50%;
+      height: 25%;
 }
 nav{
   height:40px;
@@ -73,6 +73,7 @@ h{
   color: black;
   font-size: 73px;
   font-family: verdana;
+  align-items: center;
 }
 h3{
   color: YELLOW;
@@ -86,20 +87,20 @@ h3{
 }
 .container{
   padding:0px;
-  barckground-color:blue;
+  barckground-color:lightblue;
   background-image: url("../image/BAC.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-box:40px  solidbrown;
+  border-box:40px  solidbrown;}
 
 }.container1{
   padding:0px;
-  barckground-color:blue;
-  background-image: url("../image/ufcbac.jpeg");
+  barckground-color:lightblue;
+  background-image: url("../image/bac.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-box:40px  solidbrown;
-    background-image: url("../image/BAC.jpeg");
+  background-position: relative;
+  background-image:url("../image/ufcn.png")
 }
 .panel{
   background-color: black;
@@ -110,6 +111,9 @@ h3{
   margin:0;
   display: center;
 
+}
+yoo{
+  float: right;
 }
 .yow1{
   padding: 0:
