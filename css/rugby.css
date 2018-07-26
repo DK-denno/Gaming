@@ -16,5 +16,19 @@ h2{
   font-style: oblique;
   font-family: fantasy;
   color: black;
-  text-align: right;  
+  text-align: left;
+}
+li{
+  font-size: 45px;
+  font-style: oblique;
+  font-family: fantasy;
+  color: white;
+  text-align: justified;
+}
+h3{
+  font-size: 70px;
+  font-style: italic;
+  font-family: cursive;
+  color: yellow;
+  text-align: left;
 }
