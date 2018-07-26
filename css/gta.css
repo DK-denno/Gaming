@@ -18,7 +18,7 @@ body{
 .g1{
     margin-left:80%;
     margin-top: -10%;
-    margin-bottom: 5%;
+    margin-bottom: 5%; 
 }
 .gta3{
     margin-left: 35%;
@@ -38,9 +38,11 @@ color:red;
 .gta7{
     color:beige;
     margin-left: 50%;
-    margin-top: -10%;
 }
 .gta8{
     color:red;
     font-size: 200%;
+}
+.g02{
+    display: none;
 }

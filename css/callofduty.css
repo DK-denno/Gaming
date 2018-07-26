@@ -22,7 +22,7 @@ font-family: 'Nosifer', cursive;
     margin-left: 40%;
     margin-top: -28%;
     font-family: 'Times New Roman', Times, serif;
-    color: beige;
+    color: beige; 
 }
 .wa{
     color:red;
@@ -31,14 +31,16 @@ font-family: 'Nosifer', cursive;
     
 }
 .d{
-    margin-top: -55%;
     display:none;
+}
+#d{
+    color:red;
 }
 .checked{
     color:yellow;
 }
 .d1{
     margin-left: 50%;
-    margin-top: -80%;
-    margin-bottom: 65%;
+    margin-top: -4%;
+    
 }
