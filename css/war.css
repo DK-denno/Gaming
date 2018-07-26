@@ -17,8 +17,6 @@ body{
 }
 .container{
   background-image: url('../image/bg.png');
-<<<<<<< HEAD
-=======
   width:80%;
   margin:auto;
   overflow: hidden;
@@ -44,5 +42,4 @@ nav li{
 }
 #password:hover{
   color:blue;
->>>>>>> 7dfcf0b1a35156c354760c18c2b991eed4d0d6a4
 }
