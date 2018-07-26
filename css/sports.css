@@ -58,6 +58,7 @@ transition: 1s ease;
 }
 .jumbotron{
   background-color: yellow;
+  text-align: center;
 }
 .fa{
   text-align: center;
