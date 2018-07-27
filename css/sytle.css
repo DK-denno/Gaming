@@ -70,7 +70,9 @@
   transition: 1s ease;
 }
 body{
-  background-color: black;
+  background-image: url('../image/bg1.jpeg');
+  background-size: cover;
+  background-position: center;
 }
 #logo{
   margin-left: 70px;
