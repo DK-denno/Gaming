@@ -13,6 +13,11 @@ background-size: cover;
   #465298 20px
 ); */
 }
+.home{
+  background-color: red;
+  border-style: none;
+  position: fixed;
+}
 .jumbotron1{
 background-image: url("../image/gameroom.jpeg");
 background-repeat: repeat-x;
@@ -249,4 +254,8 @@ h2{
 }
 #gotop:hover{
   background-color: darkgray;
+}
+.fa{
+  height: 30px;
+  width:30px;
 }

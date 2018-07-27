@@ -24,18 +24,22 @@ font-family: 'Nosifer', cursive;
     font-family: 'Times New Roman', Times, serif;
     color: beige; 
 }
+
 .wa{
     color:red;
     margin-left: 65%;
     margin-top: 0%;
     
-}
+/* }
 .d{
-    display:none;
-}
+
+     margin-left:10em; 
+} */
+
 #d{
     color:red;
 }
+
 .checked{
     color:yellow;
 }
@@ -43,4 +47,19 @@ font-family: 'Nosifer', cursive;
     margin-left: 50%;
     margin-top: -4%;
     
+}
+.a{
+    margin-left:20%;
+}
+.b{
+    margin-left: 25%;
+    margin-top: -4%;
+}
+.c{
+    margin-left: 30%;
+    margin-top: -5%;
+}
+.d{
+    margin-left: 35%;
+    margin-top: -5%;
 }
