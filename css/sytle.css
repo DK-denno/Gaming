@@ -56,7 +56,7 @@
   transition: 1s ease;
 }
 #war{
-  background-image: url("../image/fight1.jpeg");
+  background-image: url("../image/fight1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -84,6 +84,48 @@ a{
   text-decoration: none;
 }
 #comment{
-  color:white;
   font-size:20px;
+}
+#comment{
+  background-color:white;
+  padding:100px;
+  margin-right: 80px;
+}
+.col-md-5{
+    margin-left:60px;
+    margin-top: 30px;
+}
+.col-md-10{
+    margin-left:90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#submit{
+  background-color:red;
+  border-style:none;
+}
+#submit:hover{
+  background-color: grey;
+}
+#txt{
+  color:white;
+}
+#com{
+  margin-top:30px;
+}
+h2{
+  size:40px;
+}
+#footer{
+  background-color: grey;
+  text-align:  center;
+}
+#icons{
+  color:#3385ff;
+}
+.copyright{
+  text-align: center;
+}
+#copy{
+  font-size: 30px;
 }

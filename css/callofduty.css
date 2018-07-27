@@ -24,18 +24,22 @@ font-family: 'Nosifer', cursive;
     font-family: 'Times New Roman', Times, serif;
     color: beige; 
 }
+
 .wa{
     color:red;
     margin-left: 65%;
     margin-top: 0%;
     
-}
+/* }
 .d{
-    display:none;
-}
+
+     margin-left:10em; 
+} */
+
 #d{
     color:red;
 }
+
 .checked{
     color:yellow;
 }
